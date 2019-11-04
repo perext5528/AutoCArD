@@ -8,7 +8,10 @@ class UserInfo(models.Model):
     uid = models.CharField(max_length=100)
     user_history = models.IntegerField()
 
-
 class Post(models.Model):
     title = models.CharField(max_length=100)
     body = models.TextField()
+
+class BlogData(models.Model):
+    title = models.CharField(max_length=200)
+    link = models.URLField
